@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>portfolio</title>
+</head>
+<body>
+  <div class="header">
+    <h2>Yuta Yamaji portfolio</h2>
+  </div>
+  <div class="profile-wrapper">
+    <div class="profile-inner">
+      <h3 class="title">About Me</h3>
+      <div class="flex">
+        <div class="profile-left">
+           <img src="/img/2.png" class="profile-img">
+        </div>
+        <div class="profile-right">
+          <p class="myname">山地 侑太</p>
+          <p class="birthday">1993/02/21</p>
+          <p class="hobby">趣味・特技： ドラム•ゲーム•動画鑑賞•カラオケ</p>
+          <p class="profile-text">
+            高校を卒業後、車止めや旗ポールを作る製造業に就職。<br />
+            鉄やステンレスの加工・溶接・研磨、レーザー加工によるパイプの切断をしていました。<br />
+            副主任として進捗管理•納期対応•後輩の指導等を行なっていました。<br />
+            新たな業種ですが今までの経験を活かし、成長することを楽しみながら仕事をしていきたいと思っています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="school-wrapper">
+    <h3 class="title">School & PR</h3>
+    <p class="school-text">
+        私が受講していたプログラミングスクールについて説明指定と思います。<br />
+        2022/4/25にオンラインスクール COACHTECHを受講開始しました。<br />
+        COACHTECHではまずプログラミングの基礎となるHTML•CSSを最初に学び<br />
+        JavaScript(Vue.js,Nuxt.js)•PHP(Laravel)•MySQL•GitHub•firebaseも学びました。<br />
+        主にはPHP(Laravel)を学び課題をこなしていきました。<br />
+        COACHTECHではBasic•Standard•Advanceの3つのタームがあり、<br />
+        StandardからAdvanceタームに行く際のテストとAdvanceから卒業にかけてのテストが実施されていて、<br />
+        その2つのテストに合格し、受講者の1割程度が入れると言われているCOACHTECH pro という案件をいただけるコースに入ることができました。<br />
+        COACHTECHでは自身で調べる力をつけることを大事にしており、<br />
+        困難なことがあっても諦めずに１つ１つ課題を解決していくことができました。<br />
+        ここで培った壁にぶつかっても立ち向かう力、仕事をしながら勉強をした努力、成長したいという探究心を活かして頑張りたいと思っています。
+     </p>
+  </div>
+  <div class="product-wrapper">
+    <div class="product-inner">
+      <h3 class="title">Production</h3>
+      <div class="flex">
+        <div class="product-left">
+          <img src="./img/reseIMG.png" class="product-img">
+          <div class="product-url">
+            <a href="https://rocky-hollows-86306.herokuapp.com" class="link">Reseへ移動</a>
+            <p class="link-text">
+              架空ユーザーが設定してあるのでそれでログインできます。<br />
+              <span>※新規登録は認証の設定上コチラが許可するまで機能の使用ができないので、架空のユーザーを使用してください。</span><br />
+              ・ユーザー<br />
+              name : rese<br />
+              email : rese@rese.com<br />
+              password : 12345678<br />
+          </p>
+          </div>
+        </div>
+        <div class="product-right">
+          <div class="product-title">飲食店予約アプリ Rese</div>
+          <p class="product-text">
+            【機能】<br />
+            •会員登録（LaravelBreeze)<br />
+            •ログイン（メール認証）<br />
+            •ログアウト<br />
+            •ユーザー情報取得<br />
+            •ユーザー飲食店お気に入り一覧取得<br />
+            •ユーザー飲食店予約情報取得<br />
+            •飲食店一覧取得<br />
+            •飲食店詳細取得<br />
+            •飲食店お気に入り追加、削除<br />
+            •飲食店予約情報追加、削除、変更<br />
+            •検索機能（エリア、ジャンル、店名)<br />
+            •評価機能<br />
+            •管理者画面で店舗代表者を作成<br />
+            •店舗代表者画面で新規店舗作成、店舗情報の更新、予約確認<br />
+            •QRコード（予約の情報を確認する）<br />
+            •決済機能（Stripe）デモ機能<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-wrapper">
+    <h3 class="title">お問い合わせ</h3>
+    <div class="contact-inner">
+      <form method="post" action="mail.php">
+        <table class="formTable">
+          <tr>
+            <th>お名前</th>
+            <td><input type="text" name="お名前" /> <span>※必須</span></td>
+          </tr>
+          <tr>
+            <th>Mail（半角）</th>
+            <td><input type="text" name="Email" /> <span>※必須</span></td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容<br /></th>
+            <td>
+              <textarea name="お問い合わせ内容" cols="50" rows="5"></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="center">
+          <input type="submit" value=" 確認 " /> <input type="reset" value="リセット" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
